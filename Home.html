@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="icon"  href="res/logo.jpe">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+        
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="res/logogomy.jpg" alt="" style="height: 50px; widows: 50px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="home" href="Home.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="courses" href="courses.html">courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="contact" href="contact.html">CONTACT</a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav> 
+
+                <div class="w3-content w3-display-container">
+                        <img class="mySlides" src="res/0.jpg" style="width:100%">
+                        <img class="mySlides" src="res/1.jpg" style="width:100%">
+                        <img class="mySlides" src="res/3.jpg" style="width:100%">
+                      
+                      
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                      </div>
+                      
+                      <script>
+                      var slideIndex = 1;
+                      showDivs(slideIndex);
+                      
+                      function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                      }
+                      
+                      function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        if (n > x.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = x.length}
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";  
+                        }
+                        x[slideIndex-1].style.display = "block";  
+                      }
+                      </script>
+  <div class="parent">
+  <div class="fligne">
+    <h1 class="titrecours">courses </h1>
+  
+                              <div class="test1 par">
+                                  <img src="res/11.JPG" alt="image11" class="Bloc9photo">
+                                    <a href="#ex1" rel="modal:open"><button class="bt">view more</button></a>
+                              </div>
+                              <div class="test2 par">
+                              <img src="res/12.JPG" alt="image12" class="Bloc9photo">
+                              <a href="#ex1" rel="modal:open"><button class="bt">view more</button></a>
+
+                              </div>
+                  
+                              <div class="test3 par">
+                              <img src="res/14.JPG" alt="image14"class="Bloc9photo">
+                              <a href="#ex1" rel="modal:open"><button class="bt">view more</button></a>
+                              </div> 
+  </div>
+  
+    <div id="ex1" class="modal textmodal">
+      <p>Each track has its own goals 
+        by adopting your track,you chose your own goals</p>
+      <a href="#" rel="modal:close">Close</a>
+    </div>
+       
+       <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MkLog_27S6U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+        
+</body>
+<script src="js/main.js"></script>
+
+</html>
